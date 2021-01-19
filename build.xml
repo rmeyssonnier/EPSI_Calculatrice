@@ -10,6 +10,7 @@
       <classpath>
         <path id="org.junit" location="${lib.junit}" /> <!-- not sure if you need this -->
       </classpath>
+      <src path="src/edu/robinmeyssonnier"></src>
     </javac>
 
     <path id="classpath.test">
