@@ -10,7 +10,11 @@
 
     <mkdir dir="${build.test.classes.dir}"/>
 
-    <javac classpath="${javac.test.classpath}" destdir="${build.test.classes.dir}" srcdir="${test.src.dir}"/>
+    <javac classpath="${javac.test.classpath}" destdir="${build.test.classes.dir}" srcdir="${test.src.dir}">
+      <classpath>
+        <path id="org.junit" location="${lib.junit}" /> <!-- not sure if you need this -->
+      </classpath>
+    </javac>
 
     <path id="classpath.test">
 
@@ -25,7 +29,6 @@
     <junit haltonerror="true" haltonfailure="true">
 
       <classpath refid="classpath.test">
-        <pathelement path="${lib.junit}"/>
       </classpath>
 
       <formatter type="brief" usefile="false" />
