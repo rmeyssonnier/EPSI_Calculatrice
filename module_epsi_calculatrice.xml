@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_epsi_calculatrice" default="compile.module.epsi_calculatrice">
+  <dirname property="module.epsi_calculatrice.basedir" file="${ant.file.module_epsi_calculatrice}"/>
+  
+  <property name="module.jdk.home.epsi_calculatrice" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.epsi_calculatrice" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.epsi_calculatrice" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.epsi_calculatrice" value="-encoding UTF-8 -source 15 -target 15 ${compiler.args}"/>
+  
+  <property name="epsi_calculatrice.output.dir" value="${module.epsi_calculatrice.basedir}/out/production/EPSI_Calculatrice"/>
+  <property name="epsi_calculatrice.testoutput.dir" value="${module.epsi_calculatrice.basedir}/out/test/EPSI_Calculatrice"/>
+  
+  <path id="epsi_calculatrice.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="epsi_calculatrice.module.production.classpath">
+    <path refid="${module.jdk.classpath.epsi_calculatrice}"/>
+    <pathelement location="${path.variable.maven_repository}/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+  </path>
+  
+  <path id="epsi_calculatrice.runtime.production.module.classpath">
+    <pathelement location="${epsi_calculatrice.output.dir}"/>
+    <pathelement location="${path.variable.maven_repository}/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+  </path>
+  
+  <path id="epsi_calculatrice.module.classpath">
+    <path refid="${module.jdk.classpath.epsi_calculatrice}"/>
+    <pathelement location="${epsi_calculatrice.output.dir}"/>
+    <pathelement location="${path.variable.maven_repository}/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+  </path>
+  
+  <path id="epsi_calculatrice.runtime.module.classpath">
+    <pathelement location="${epsi_calculatrice.testoutput.dir}"/>
+    <pathelement location="${epsi_calculatrice.output.dir}"/>
+    <pathelement location="${path.variable.maven_repository}/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-api/5.4.2/junit-jupiter-api-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-engine/5.4.2/junit-jupiter-engine-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter-params/5.4.2/junit-jupiter-params-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-commons/1.4.2/junit-platform-commons-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/junit/platform/junit-platform-engine/1.4.2/junit-platform-engine-1.4.2.jar"/>
+    <pathelement location="${path.variable.maven_repository}/org/opentest4j/opentest4j/1.1.1/opentest4j-1.1.1.jar"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.epsi_calculatrice">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.epsi_calculatrice">
+    <patternset refid="excluded.from.module.epsi_calculatrice"/>
+  </patternset>
+  
+  <path id="epsi_calculatrice.module.sourcepath">
+    <dirset dir="${module.epsi_calculatrice.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.epsi_calculatrice" depends="compile.module.epsi_calculatrice.production,compile.module.epsi_calculatrice.tests" description="Compile module EPSI_Calculatrice"/>
+  
+  <target name="compile.module.epsi_calculatrice.production" depends="register.custom.compilers" description="Compile module EPSI_Calculatrice; production classes">
+    <mkdir dir="${epsi_calculatrice.output.dir}"/>
+    <javac2 destdir="${epsi_calculatrice.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.epsi_calculatrice}/javac">
+      <compilerarg line="${compiler.args.epsi_calculatrice}"/>
+      <bootclasspath refid="epsi_calculatrice.module.bootclasspath"/>
+      <classpath refid="epsi_calculatrice.module.production.classpath"/>
+      <src refid="epsi_calculatrice.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.epsi_calculatrice"/>
+    </javac2>
+    
+    <copy todir="${epsi_calculatrice.output.dir}">
+      <fileset dir="${module.epsi_calculatrice.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.epsi_calculatrice.tests" depends="register.custom.compilers,compile.module.epsi_calculatrice.production" description="compile module EPSI_Calculatrice; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.epsi_calculatrice" description="cleanup module">
+    <delete dir="${epsi_calculatrice.output.dir}"/>
+    <delete dir="${epsi_calculatrice.testoutput.dir}"/>
+  </target>
+</project>
