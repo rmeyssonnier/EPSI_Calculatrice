@@ -2,6 +2,10 @@
 
   <property file="epsi_calculatrice.properties"></property>
 
+  <path id="classpath">
+    <fileset dir="${lib.dir}" includes="**/*.jar"/>
+  </path>
+
   <target name="all">
 
     <mkdir dir="${build.test.classes.dir}"/>
@@ -10,17 +14,19 @@
 
     <path id="classpath.test">
 
-      <pathelement location="/lib" />
-
       <pathelement location="${build.test.classes.dir}" />
 
       <pathelement location="${build.classes.dir}" />
 
     </path>
 
+
+
     <junit haltonerror="true" haltonfailure="true">
 
-      <classpath refid="classpath.test" />
+      <classpath refid="classpath.test">
+        <path refid="classpath"/>
+      </classpath>
 
       <formatter type="brief" usefile="false" />
 
