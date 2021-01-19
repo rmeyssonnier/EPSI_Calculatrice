@@ -7,21 +7,16 @@
     <mkdir dir="${build.test.classes.dir}"/>
 
     <javac classpath="${javac.test.classpath}" destdir="${build.test.classes.dir}" srcdir="${test.src.dir}">
-      <classpath>
-        <path id="org.junit" location="${lib.junit}" /> <!-- not sure if you need this -->
-        <pathelement location="src/edu/robinmeyssonnier/" /> <!-- not sure if you need this -->
-      </classpath>
-      <src path="src/edu/robinmeyssonnier"></src>
+     <!--<src path="src/edu/robinmeyssonnier"></src>-->
     </javac>
 
     <path id="classpath.test">
       <pathelement location="${build.test.classes.dir}" />
       <fileset dir="${lib.dir}" includes="**/*.jar"/>
       <pathelement location="${build.classes.dir}" />
-      <fileset dir="src/edu/robinmeyssonnier" includes="*.java"/>
     </path>
 
-    <junit haltonerror="true" haltonfailure="true" fork="yes">
+    <junit haltonerror="true" haltonfailure="true">
 
       <classpath refid="classpath.test"/>
 

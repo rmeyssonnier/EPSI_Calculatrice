@@ -3,6 +3,7 @@ package edu.robinmeyssonnier.tests;
 import edu.robinmeyssonnier.Calculatrice;
 
 import static org.junit.Assert.*;
+import org.hamcrest.core.*;
 
 public class CalculatriceTest {
 
