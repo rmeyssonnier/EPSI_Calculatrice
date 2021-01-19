@@ -2,7 +2,7 @@
 
   <property file="epsi_calculatrice.properties"></property>
 
-  <target name="all" depends="build">
+  <target name="all">
 
     <mkdir dir="${build.test.classes.dir}"/>
 
