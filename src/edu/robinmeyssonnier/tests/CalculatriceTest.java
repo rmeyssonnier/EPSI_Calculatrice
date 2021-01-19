@@ -1,6 +1,5 @@
 package edu.robinmeyssonnier.tests;
 
-import edu.robinmeyssonnier.Calculatrice;
 import static org.junit.Assert.*;
 
 public class CalculatriceTest {
