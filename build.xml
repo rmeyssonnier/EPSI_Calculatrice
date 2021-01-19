@@ -10,7 +10,7 @@
 
     <path id="classpath.test">
 
-      <pathelement location="/lib/junit-4.13.1.jar" />
+      <pathelement location="/lib" />
 
       <pathelement location="${build.test.classes.dir}" />
 
