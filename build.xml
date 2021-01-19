@@ -26,6 +26,8 @@
 
     </junit>
 
+    <javadoc sourcepath="src" destdir="dist"/>
+
     <!-- Empty placeholder for easier customization. -->
 
     <!-- You can override this target in the ../build.xml file. -->
