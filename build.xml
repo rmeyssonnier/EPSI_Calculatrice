@@ -25,7 +25,7 @@
     <junit haltonerror="true" haltonfailure="true">
 
       <classpath refid="classpath.test">
-        <path refid="classpath"/>
+        <pathelement path="${lib.junit}"/>
       </classpath>
 
       <formatter type="brief" usefile="false" />
