@@ -16,7 +16,7 @@
       <pathelement location="${build.test.classes.dir}" />
       <fileset dir="${lib.dir}" includes="**/*.jar"/>
       <pathelement location="${build.classes.dir}" />
-      <pathelement location="${src.dir}" />
+      <fileset dir="./src" includes="**/*.java"/>
     </path>
 
 
