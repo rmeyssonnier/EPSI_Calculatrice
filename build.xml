@@ -24,7 +24,7 @@
 
       <formatter type="brief" usefile="false" />
 
-      <test name="javab3.NewTestSuite" />
+      <test name="edu.robinmeyssonnier.tests.CalculatriceTest" />
 
     </junit>
 
