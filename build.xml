@@ -20,9 +20,7 @@
       <fileset dir="src/edu/robinmeyssonnier" includes="*.java"/>
     </path>
 
-
-
-    <junit haltonerror="true" haltonfailure="true">
+    <junit haltonerror="true" haltonfailure="true" fork="yes">
 
       <classpath refid="classpath.test"/>
 
