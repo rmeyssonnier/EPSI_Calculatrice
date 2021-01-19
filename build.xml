@@ -2,13 +2,14 @@
 
   <property file="epsi_calculatrice.properties"></property>
 
-  <target name="all">
+  <target name="all" depends="build">
 
     <mkdir dir="${build.test.classes.dir}"/>
 
     <javac classpath="${javac.test.classpath}" destdir="${build.test.classes.dir}" srcdir="${test.src.dir}">
       <classpath>
         <path id="org.junit" location="${lib.junit}" /> <!-- not sure if you need this -->
+        <pathelement location="src/edu/robinmeyssonnier/" /> <!-- not sure if you need this -->
       </classpath>
       <src path="src/edu/robinmeyssonnier"></src>
     </javac>
