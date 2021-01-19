@@ -13,11 +13,10 @@
     </javac>
 
     <path id="classpath.test">
-
       <pathelement location="${build.test.classes.dir}" />
       <fileset dir="${lib.dir}" includes="**/*.jar"/>
       <pathelement location="${build.classes.dir}" />
-
+      <pathelement location="${src.dir}" />
     </path>
 
 

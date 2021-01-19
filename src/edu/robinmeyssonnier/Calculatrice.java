@@ -1,4 +1,4 @@
-package edu.robinmeyssonnier.tests;
+package edu.robinmeyssonnier;
 
 public class Calculatrice {
 
