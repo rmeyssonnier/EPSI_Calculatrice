@@ -1,32 +1,34 @@
-<target name="all">
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="epsi_calculatrice" default="all">
+  <target name="all">
 
-  <mkdir dir="${build.test.classes.dir}"/>
+    <mkdir dir="${build.test.classes.dir}"/>
 
-  <javac classpath="${javac.test.classpath}" destdir="${build.test.classes.dir}" srcdir="${test.src.dir}"/>
+    <javac classpath="${javac.test.classpath}" destdir="${build.test.classes.dir}" srcdir="${test.src.dir}"/>
 
-  <path id="classpath.test">
+    <path id="classpath.test">
 
-    <pathelement location="/Users/robinmeyssonnier/.m2/repository/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar" />
+      <pathelement location="/Users/robinmeyssonnier/.m2/repository/org/junit/jupiter/junit-jupiter/5.4.2/junit-jupiter-5.4.2.jar" />
 
-    <pathelement location="${build.test.classes.dir}" />
+      <pathelement location="${build.test.classes.dir}" />
 
-    <pathelement location="${build.classes.dir}" />
+      <pathelement location="${build.classes.dir}" />
 
-  </path>
+    </path>
 
-  <junit haltonerror="true" haltonfailure="true">
+    <junit haltonerror="true" haltonfailure="true">
 
-    <classpath refid="classpath.test" />
+      <classpath refid="classpath.test" />
 
-    <formatter type="brief" usefile="false" />
+      <formatter type="brief" usefile="false" />
 
-    <test name="edu.robinmeyssonnier.tests.MainTest" />
+      <test name="edu.robinmeyssonnier.tests.MainTest" />
 
-  </junit>
+    </junit>
 
-  <!-- Empty placeholder for easier customization. -->
+    <!-- Empty placeholder for easier customization. -->
 
-  <!-- You can override this target in the ../build.xml file. -->
+    <!-- You can override this target in the ../build.xml file. -->
 
-</target>
-
+  </target>
+</project>
